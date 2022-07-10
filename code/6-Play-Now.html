@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-play-now.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-logo">
+            <a href="1-Homepage-Main.html">
+                <img src="../assets/ADEX LEGENDS 1.png" class="logo">
+            </a>
+        </div>
+
+        <span id="toggle-nav" onclick="burgerMenu()"><img src="../assets/hamburger-icon.webp" class="burger-icon"></span>
+        <ul id = "navlist">
+            <li><a href="1-Homepage-Main.html">Home</a></li>
+            <li><a href="2.0-Legends.html">Legends</a></li>
+            <li><a href="3.0-Maps.html">Maps<img src="../assets/dropdown.png" class="dropdown-img"></a>
+                <ul class="dropdown">
+                    <li><a href="3.1-Maps-Arenas.html">Arenas</a></li>
+                    <li><a href="3.2-Maps-BattleRoyale.html">Battle Royale</a></li>
+                </ul>
+            </li>
+            <li><a href="4-About Us.html">About Us</a></li>
+            <li><a href="5-Register.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-wrapper">
+        <section id="play-now">
+            <div class="play-now-wrapper">
+                <div class="play-now">
+                    <img src="../assets/apex-white-icon.svg" class="icon">
+                    <h1>SELECT YOUR PLATFORM</h1>
+                    <div class="text">
+                        Apex Legends is available for free on PlayStation®4, PlayStation®5, Xbox One, Xbox Series X|S,
+                        Nintendo Switch, and PC via Origin and Steam. Choose your platform below, download the game, and
+                        get
+                        ready to jump into the arena.
+                    </div>
+                </div>
+                <div class="container-play">
+                    <div class="box-play" id="box-play" onmouseout="releaseText()" onmouseover="hovertext()">
+                        <a href="https://store.playstation.com/en-id/product/UP0006-CUSA12540_00-ASIA000000000001">
+                            <img src="../assets/ps.png" id="play-icon">
+                        </a>
+                        <span id="hover-text-1">Playstation®4</span>
+                    </div>
+                    <div class="box-play" id="box-play-1" onmouseout="releaseText1()" onmouseover="hovertext1()">
+                        <a href="https://store.playstation.com/en-id/product/UP0006-PPSA04873_00-APEXLEGENDRSPWN1/">
+                            <img src="../assets/ps.png" id="play-icon">
+                        </a>
+                        <span id="hover-text-2">Playstation®5</span>
+                    </div>
+                    <div class="box-play" id="box-play-2" onmouseout="releaseText2()" onmouseover="hovertext2()">
+                        <a
+                            href="https://www.microsoft.com/en-id/p/APEX-Legends/BV9ML45J2Q5V?rtc=1&activetab=pivot:overviewtab">
+                            <img src="../assets/xbox.png" id="play-icon">
+                        </a>
+                        <span id="hover-text-3">Xbox</span>
+                    </div>
+                    <div class="box-play" id="box-play-3" onmouseout="releaseText3()" onmouseover="hovertext3()">
+                        <a href="https://www.nintendo.com/store/products/apex-legends-switch/">
+                            <img src="../assets/nintendo.png" id="play-icon">
+                        </a>
+                        <span id="hover-text-4">Nintendo Switch</span>
+                    </div>
+                    <div class="box-play" id="box-play-4" onmouseout="releaseText4()" onmouseover="hovertext4()"">
+                        <a href=" https://www.origin.com/idn/en-us/store/apex/apex">
+                        <img src="../assets/origin.png" id="play-icon">
+                        </a>
+                        <span id="hover-text-5">Origin on PC</span>
+                    </div>
+                    <div class="box-play" id="box-play-5" onmouseout="releaseText5()" onmouseover="hovertext5()">
+                        <a
+                            href="https://store.steampowered.com/app/1172470/Apex_Legends/?utm_medium=organic&utm_source=franchise_web&utm_content=buylink">
+                            <img src="../assets/steam.png" id="play-icon">
+                        </a>
+                        <span id="hover-text-6">Steam on PC</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="footer-wrapper">
+                <div class="nav-footer">
+                    <h1>NAVIGATION</h1>
+                    <hr class="nav-break">
+                    <ul>
+                        <li><a href="1-Homepage-Main.html">Home</a></li>
+                        <li><a href="2.0-Legends.html">Legends</a></li>
+                        <li><a href="#modes">Maps<img src="../assets/dropdown.png" class="dropdown-img"></a>
+                            <ul class="dropdown">
+                                <li><a href="3.1-Maps-Arenas.html">Arenas</a></li>
+                                <li><a href="3.2-Maps-BattleRoyale.html">Battle Royale</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav-footer-1">
+                        <ul>
+                            <li><a href="4-About Us.html">About Us</a></li>
+                            <li><a href="5-Register.html">Registration</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="connect-with-us">
+                    <h1>CONNECT WITH US !</h1>
+                    <hr class="connect-break">
+                    <div class="social-media">
+                        <a href="https://twitter.com/PlayApex?s=20&t=KZ94Ji7k0e99Cp58x8vqVg" target="_blank"><img src="../assets/icon-twitter.png" class="icon-socmed"></a>
+                        <a href="https://www.instagram.com/playapex/" target="_blank"><img src="../assets/logo-ig.jpg" class="icon-socmed"></a>
+                        <a href="https://www.twitch.tv/directory/game/Apex%20Legends" target="_blank"><img src="../assets/twitch.png" class="icon-socmed"></a>
+                        <a href="https://www.youtube.com/c/playapex" target="_blank"><img src="../assets/logo-yt.png" class="icon-yt"></a>
+                        <a href="https://www.facebook.com/playapex/" target="_blank"><img src="../assets/facebook.png" class="icon-fb"></a>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="container-7">
+                        <a href="#play-now">
+                            <h2>PLAY NOW !</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="rating">
+                    <a href="https://www.esrb.org/ratings/38326/Apex+Legends/" target="_blank"><img src="../assets/apex-esrb-rating-t-interactive-june-2021.svg"
+                            class="rating-box"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                ©2022 BINUS Arts Inc.
+            </div>
+        </section>
+    </div>
+    <script src="script-play-now.js"></script>
+    <script src="script-burger-bar.js"></script>
+</body>
+
+</html>

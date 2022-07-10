@@ -1,0 +1,1510 @@
+@font-face {
+    font-family: apex-legends;
+    src: url("../assets/ApexMk2-Regular.otf");
+}
+
+@font-face {
+    font-family: TT-Lakes;
+    src: url("../assets/TTLakes-Regular.ttf");
+}
+
+@font-face {
+    font-family: Duke-Fill;
+    src: url("../assets/Duke\ Fill.otf");
+}
+
+@font-face {
+    font-family: TT-Bold;
+    src: url("../assets/TTLakes-Bold.ttf");
+}
+
+@font-face {
+    font-family: TT-Med;
+    src: url("../assets/TT\ Lakes\ Medium\ DEMO.otf");
+}
+
+body {
+    margin: 0;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'apex-legends', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: black;
+    align-items: center;
+    color: white;
+    display: flex;
+    position: fixed;
+    /* padding-right: 50px; */
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 5px;
+    background: none;
+    display: block;
+    float: right;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar ul li a {
+    padding-top: 20px;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #ddd;
+    letter-spacing: 0.15em;
+    transition: .3s ease;
+    background-color: transparent;
+}
+
+a {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    color: white;
+    transition: .2s ease;
+    background-color: transparent;
+}
+
+a:hover {
+    transition: .2s ease;
+    transform: scale(1.1);
+    color: black;
+}
+
+.navbar ul li a:hover {
+    display: block;
+    color: red;
+    transition: .3s ease;
+    transform: scale(1.1);
+    box-shadow: inset 0px 0px 5px #000;
+}
+
+.navbar ul li .dropdown {
+    display: none;
+}
+
+.navbar ul li:hover .dropdown {
+    display: inline-block;
+    position: absolute;
+    background: black;
+    padding: 10px;
+    z-index: 5;
+}
+
+.navbar ul li:hover .dropdown-img {
+    transition: .2s ease;
+    transform: rotate(180deg);
+}
+
+.navbar ul li:hover .dropdown li {
+    display: block;
+}
+#toggle-nav {
+    display: none;
+    cursor: pointer;
+    flex-direction: row;
+}
+
+.burger-icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.brand-logo {
+    margin-left: -35px;
+    margin-top: 5px;
+    height: 85px;
+    display: inline-block;
+}
+
+.logo {
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 55px;
+    width: 85px;
+    transition: .2s ease;
+}
+
+.logo:hover {
+    transition: .2s ease;
+    transform: scale(1.15);
+}
+
+.brand-logo a {
+    background-color: transparent;
+}
+
+.dropdown-img {
+    width: 20px;
+    height: 13px;
+    margin-left: 15px;
+    transition: .2s ease;
+}
+
+
+.main-wrapper {
+    margin-top: 58px;
+}
+
+.homepage-wrapper {
+    background: url("../assets/apex-section-bg-saviors-season-return-user-xl.jpg.adapt.1920w\(cut\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 890px;
+    background-position: 70% 50%;
+}
+
+.home-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+    margin-left: 15%;
+    padding-top: 250px;
+    padding-right: 250px;
+}
+
+.img-home {
+    width: 340px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.intro-text {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: white;
+    text-align: center;
+}
+
+a {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    color: white;
+    transition: .2s ease;
+    background-color: transparent;
+}
+
+a:hover {
+    transition: .2s ease;
+    transform: scale(1.1);
+    color: black;
+}
+
+.container-1 {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transition: .2s ease;
+}
+
+.container-1:hover {
+    background-color: white;
+    transform: scale(1.2);
+    transition: .2s ease;
+    color: black;
+}
+
+.container-2{
+    margin-left: auto;
+    margin-right: 300px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transition: .2s ease;
+    font-size: 17px;
+}
+
+.container-2:hover {
+    background-color: white;
+    transform: scale(1.1);
+    transition: .2s ease;
+    color: black;
+}
+
+.container-2:hover a:hover{
+    transition: .2s ease;
+    transform: scale(1.1);
+}
+
+.home-intro-2 {
+    background: url("../assets/cut.jpg");
+    border: 1px solid black;
+    display: flex;
+    height: 900px;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.img-home-2 {
+    display: block;
+    margin-left: auto;
+    width: 940px;
+    height: 456px;
+}
+
+.intro-text-2 {
+    color: white;
+    margin-left: 80px;
+    font-size: 40px;
+}
+
+.madness-intro {
+    font-size: 80px;
+}
+
+.home-intro-3 {
+    background: url("../assets/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg");
+    height: 1150px;
+    background-size: cover;
+}
+
+.intro-news h1 {
+    text-align: center;
+    font-size: 54px;
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+.container-news {
+    position: relative;
+    display: flex;
+    height: 350px;
+    flex-direction: row;
+    margin-top: 65px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 110px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 850px;
+    background-color: #161616;
+    text-align: center;
+    float: left;
+    margin: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: .2s ease;
+}
+
+.box h3 {
+    color: white;
+    font-size: 36px;
+    text-align: justify;
+}
+
+.box-content {
+    margin-top: 25px;
+    margin-bottom: auto;
+    color: white;
+    margin-left: 30px;
+    margin-right: 45px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'TT-Lakes';
+}
+
+.box:hover {
+    transition: .2s ease;
+    transform: scale(1.1);
+}
+
+.apex-box {
+    font-size: 25px;
+    color: white;
+    font-family: 'Duke-Fill';
+    display: flex;
+    flex-direction: row;
+}
+
+.apex-text {
+    margin-right: 35px;
+    color: red;
+}
+
+.break {
+    background-color: red;
+    width: 100%;
+    align-items: left;
+    height: 1%;
+}
+
+.new-hero {
+    background: url("../assets/apex-hero-medium-saviors-homepage-season-7x2-xl.jpg.adapt.crop7x2.1920w\(cutt\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.new-hero-text {
+    font-family: "TT-Lakes";
+    margin: auto;
+    color: white;
+    padding-left: 46%;
+    width: 40%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-hero-text h1 {
+    margin-bottom: 15px;
+    font-family: "Duke-Fill";
+    font-size: 100px;
+}
+
+.container-3 {
+    margin-bottom: 130px;
+    margin-left: 53%;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transition: .2s ease;
+}
+
+.container-3:hover {
+    background-color: white;
+    transform: scale(1.1);
+    transition: .2s ease;
+    color: black;
+}
+
+#battle-royale {
+    background: url("../assets/apex-section-bg-battle-royale-video-xl.jpg.adapt.1920w\(cutvers\).jpg");
+    background-size: cover;
+    height: 1140px;
+    background-position: 60% 40%;
+}
+
+.container-battle-royale {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: space-around;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 710px;
+    text-align: center;
+    margin: 10px;
+    overflow: hidden;
+    transition: .2s ease;
+}
+
+.icon-box-1 {
+    width: 386px;
+    height: 262px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-battle-royale {
+    font-family: "TT-Lakes";
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 35px;
+}
+
+.intro-battle-royale-1 {
+    font-family: "Duke-Fill";
+    margin-top: 0;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 94px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+.box-lead {
+    font-family: "TT-Bold";
+    font-size: 36px;
+}
+
+.box-content-1 {
+    margin-top: 25px;
+    font-family: "TT-Lakes";
+    font-size: 24px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.video-wrapper {
+    background: url("../assets/apex-section-bg-saviors-season-secondary-texture-xl.jpg.adapt.1920w9\(cut\).jpg");
+    height: 1080px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-wrapper h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 64px;
+}
+
+.trailer-video {
+    width: 1080px;
+    height: 720px;
+}
+
+
+#legends {
+    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    background-size: cover;
+    height: 650px;
+    display: flex;
+}
+
+.legends-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.legends-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.legends-text p {
+    margin-top: 95px;
+    font-size: 45px;
+    width: 550px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.legends-span {
+    display: flex;
+    font-size: 80px;
+    color: red;
+}
+
+.legends-span-1 {
+    display: flex;
+    font-family: "TT-Lakes";
+    font-size: 20px;
+}
+
+.legends-walp {
+    display: flex;
+    width: 1100px;
+    height: 560px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+
+.container-4 {
+    margin-top: 50px;
+    margin-right: 155px;
+    padding-right: 5px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    transition: .2s ease;
+}
+
+.container-4 a {
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.container-4:hover {
+    background-color: white;
+    transform: scale(1.1);
+    transition: .2s ease;
+    color: black;
+}
+
+
+.news-wrap {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.sign-up-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 95px;
+    margin-left: 95px;
+    justify-content: space-between;
+}
+
+.sign-up-left h1 {
+    font-family: "Duke-Fill";
+    font-size: 74px;
+}
+
+.sign-up-text {
+    width: 65%;
+    font-size: 28px;
+    font-family: "TT-Lakes";
+}
+
+.form-right {
+    margin-top: 150px;
+}
+
+
+
+.container-form {
+    font-family: "TT-Lakes";
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#terms {
+    margin-top: 50px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.container-5 {
+    margin-top: 50px;
+    margin-right: 215px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    transition: .2s ease;
+}
+
+.container-5 a {
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.container-5:hover {
+    background-color: white;
+    transform: scale(1.1);
+    transition: .2s ease;
+    color: black;
+}
+
+.play-now-wrapper {
+    background: url("../assets/apex-section-bg-saviors-season-play-for-free-blue-texture-xl.jpg.adapt.1920w\(cut\).jpg");
+    height: 750px;
+    background-size: cover;
+    display: flex;
+}
+
+.play-now-main {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "TT-Lakes";
+    color: white;
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.play-icon {
+    width: 600px;
+    height: 190px;
+    margin: auto;
+}
+
+.play-now-main h1 {
+    font-family: "Duke-Fill";
+    font-size: 64px;
+}
+
+.container-6 {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    margin: auto;
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    transition: .2s ease;
+}
+
+/* .container-6 a{
+    padding-left: 65px;
+    padding-right: 65px;
+} */
+
+.container-6:hover {
+    background-color: white;
+    transform: scale(1.1);
+    transition: .2s ease;
+    color: black;
+}
+
+.container-7 {
+    margin: auto;
+    margin-right: 100px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    transition: .2s ease;
+    font-family: "TT-Lakes";
+    font-size: 15px;
+}
+
+
+.container-7:hover {
+    background-color: white;
+    transform: scale(1.1);
+    transition: .2s ease;
+    color: black;
+}
+
+
+.footer-wrapper {
+    background-color: black;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-footer {
+    font-size: 18px;
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+.nav-footer h1 {
+    color: white;
+    font-size: 64px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 23px;
+}
+
+.nav-break {
+    margin-left: 25px;
+    width: 250px;
+    height: 3px;
+    background-color: white;
+    align-items: left;
+}
+
+.nav-footer ul {
+    margin: 0;
+    padding: 5px;
+    background: none;
+    display: block;
+    float: left;
+}
+
+.nav-footer ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-footer ul li a {
+    padding-top: 20px;
+    display: block;
+    text-decoration: none;
+    padding: 18px;
+    color: #ddd;
+    letter-spacing: 0.15em;
+    transition: .3s ease;
+    background-color: transparent;
+}
+
+.nav-footer ul li a:hover {
+    display: block;
+    color: red;
+    transition: .3s ease;
+    transform: scale(1.1);
+}
+
+.nav-footer ul li .dropdown {
+    display: none;
+}
+
+.nav-footer ul li:hover .dropdown {
+    display: inline-block;
+    position: absolute;
+    background: black;
+    padding: 2px;
+    z-index: 5;
+}
+
+.nav-footer ul li:hover .dropdown-img {
+    transition: .2s ease;
+    transform: rotate(180deg);
+}
+
+.nav-footer ul li:hover .dropdown li {
+    display: block;
+}
+
+.nav-footer-1 {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.nav-footer-1 ul {
+    margin: 0;
+    padding: 5px;
+    background: none;
+    display: block;
+    float: left;
+}
+
+.nav-footer-1 ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-footer-1 ul li a {
+    padding-top: 20px;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #ddd;
+    letter-spacing: 0.15em;
+    transition: .3s ease;
+    background-color: transparent;
+}
+
+.nav-footer-1 ul li a:hover {
+    display: block;
+    color: red;
+    transition: .3s ease;
+    transform: scale(1.1);
+}
+
+.connect-with-us {
+    padding-top: 70px;
+    color: white;
+    font-size: 20px;
+}
+
+.connect-with-us h1 {
+    margin-top: 0;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.connect-break {
+    width: 150px;
+    height: 3px;
+    background-color: white;
+    margin-left: 0px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media a {
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-left: 0px;
+    transform: scale(1.2);
+}
+
+.icon-socmed {
+    width: 25px;
+    height: 25px;
+    transition: .2s ease;
+}
+
+.icon-yt {
+    width: 32px;
+    height: 23px;
+    transition: .2s ease;
+}
+
+.icon-fb {
+    width: 15px;
+    height: 23px;
+    transition: .2s ease;
+}
+
+.icon-socmed:hover,
+.social-media a:hover,
+.icon-yt:hover,
+.icon-fb:hover {
+    transition: .2s ease;
+    transform: scale(1.2);
+}
+
+.rating-box {
+    margin-top: 70px;
+    transition: .2s ease;
+}
+
+.rating-box:hover {
+    transform: scale(1.2);
+    transition: .2s ease;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    margin-top: -22px;
+}
+
+@media screen and (max-width: 1550px){
+    .home-intro-3{
+        height: 1800px;
+    }
+    .box{
+        height: 720px;
+    }
+    .legends-walp{
+        width: 867px;
+    }
+    .legends-span-1{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1400px) { /* Laptop Size - 1024px */
+    .home-intro-2 {
+        background-position: 50% 50%;
+    }
+    .trailer-video {
+        width: 914px;
+        height: 569px;
+    }
+    .new-hero {
+        background-position: 35% 50%;
+    }
+
+    .box{
+        height: 700px;
+        width: 405px;
+    }
+
+    .intro-battle-royale{
+        font-size: 26px;
+    }
+    
+
+    .icon-box-1{
+        width: 326px;
+        height: 218px;
+    }
+
+    .box-content-1{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    #battle-royale{
+        height: 1370px;
+    }
+
+    .box-1, .box-2, .box-3{
+        height: 450px;
+    }
+
+    .video-wrapper h1{
+        font-size: 54px;
+    }
+
+    .box-lead{
+        font-size: 24px;
+    }
+    .home-intro-3{
+        height: 1800px;
+    }
+    .legends-walp{
+        width: 500px;
+        height: 320px;
+        margin: auto;
+    }
+
+
+    .connect-with-us{
+        margin-left: 45px;
+    }
+    .legends-text p{
+        font-size: 32px;
+        width: 420px;
+    }
+
+    .container-4{
+        margin-right: 82px;
+    }
+
+    .legends-text{
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+
+    .sign-up-left{
+        margin-top: 10px;
+    }
+
+    .form-right{
+        margin-right: 35px;
+    }
+
+    .sign-up-text{
+        font-size: 20px;
+    }
+
+
+    .connect-with-us{
+        margin-left: 55px;
+    }
+
+    .rating{
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .rating a{
+        padding: 0;
+    }
+
+    .container-7{
+        margin-right: 69px;
+    }
+
+    .rating-box{
+        width: 210px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 800px) { /* Tablet Size */
+
+    #navlist{
+        display: none;
+    }
+
+    #toggle-nav{
+        display: block;
+        color: white;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .brand-logo{
+        margin-left: -11px;
+        margin-top: 0;
+    }
+
+    .box {
+        height: 600px;
+    }
+
+    .box h3 {
+        font-size: 26px;
+    }
+
+    .home-intro-3 {
+        height: 2250px;
+    }
+
+    .new-hero{
+        padding: 55px;
+        background-position: 40% 50%;
+    }
+
+    .container-3{
+        font-size: 14px;
+    }
+
+    .intro-battle-royale-1 {
+        font-size: 64px;
+    }
+
+    .intro-battle-royale {
+        font-size: 25px;
+    }
+
+    .icon-box-1 {
+        height: 185px;
+        width: 310px;
+    }
+
+
+    #battle-royale {
+        height: 1653px;
+    }
+
+    #news{
+        height: 650px;
+    }
+
+    .form-right{
+        margin-right: 14px;
+        margin-top: 74px;
+    }
+
+    .container-battle-royale{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container-2{
+        margin-right: 225px;
+    }
+
+    .container-3 a{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .video-wrapper {
+        height: 820px;
+    }
+
+    .video-wrapper h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .trailer-video {
+        width: 680px;
+        height: 480px;
+    }
+
+    .legends-wrap {
+        flex-direction: column;
+    }
+
+    .legends-walp {
+        margin: auto;
+    }
+
+    .legends-text {
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .legends-span-1 {
+        width: 50%;
+    }
+
+    #legends {
+        height: 880px;
+        padding-bottom: 50px;
+    }
+
+    .container-4 {
+        margin-right: 0;
+    }
+
+    .sign-up-text{
+        font-size: 15px;
+    }
+
+    .container-5{
+        margin-right: 165px;
+    }
+
+    .sign-up-left {
+        margin-left: 35px;
+    }
+
+    .box-1, .box-2, .box-3{
+        height: 400px;
+    }
+
+    input[type=email] {
+        width: 365px;
+    }
+
+    input[type=date] {
+        width: 155px;
+        margin-right: 20px;
+    }
+
+    .play-now-main{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    select {
+        width: 195px;
+        height: 54px;
+    }
+
+    .container-form{
+        justify-content: space-between;
+        margin-right: 25px;
+    }
+
+    .footer-wrapper{
+        padding-left: 15px;
+    }
+
+    .nav-footer h1{
+        font-size: 42px;
+    }
+
+    .nav-footer{
+        margin-left: 3px;
+    }
+    .connect-with-us{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .rating-box{
+        display: none;
+    }
+
+    .rating{
+        display: flex;
+        margin: 15px;
+    }
+
+    .rating a{
+        padding: 0;
+    }
+
+    .container-7{
+        margin-right: 60px;
+    }
+}
+
+
+@media screen and (max-width: 320px) { /* Mobile Size */
+
+    a {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 10px;
+    }
+
+    .home-intro{
+        width: 65%;
+    }
+    
+    .home-intro-2{
+        height: 500px;
+        background-position: 50% 0%;
+    }
+
+    .box{
+        height: 750px;
+    }
+
+    .intro-news h1{
+        font-size: 45px;
+    }
+
+    .home-intro-3{
+        height: 2635px;
+    }
+
+    .new-hero-text{
+        padding-left: 0;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .new-hero{
+        background-position: 0% 10%;
+    }
+
+    .new-hero-text h1{
+        padding-left: 0;
+        width: 100%;
+        font-size: 80px;
+    }
+    .homepage-wrapper{
+        background-position: 3% 50%;
+        height: 560px;
+    }
+
+    .intro-battle-royale-1{
+        font-size: 44px;
+    }
+
+    .intro-battle-royale{
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 20px;
+    }
+
+    .intro-text-2{
+        font-size: 30px;
+    }
+
+    .container-2{
+        margin-right: 0;
+    }
+
+    .img-home{
+        width: 222px;
+        height: 204px;
+    }
+
+    .intro-text{
+        font-size: 12px;
+    }
+
+    .homepage-wrapper{
+        height: 590px;
+    }
+
+    .intro-text-2{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .container-3{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .box-1, .box-2, .box-3{
+        height: 440px;
+    }
+
+    #battle-royale{
+        height: 1800px;
+    }
+
+    .trailer-video{
+        width: 360px;
+        height: 180px;
+    }
+
+    .video-wrapper h1{
+        font-size: 34px;
+    }
+
+    .video-wrapper{
+        height: 495px;
+    }
+
+    .trailer-video{
+        width: 295px;
+        height: 210px;
+    }
+
+    .legends-walp{
+        width: 299px;
+        height: 207px;
+        margin-left: 13px;
+    }
+
+    .legends-span{
+        font-size: 30px;
+    }
+
+    .legends-span-1{
+        font-size: 20px;
+        width: 55%;
+    }
+
+    .legends-text{
+        text-align: unset;
+        justify-content: unset;
+        margin: unset;
+        align-items: unset;
+        margin-top: -145px;
+    }
+
+    #legends{
+        height: 660px;
+    }
+    .legends-text p{
+        font-size: 20px;
+    }
+
+    .container-4{
+        margin-left: 3x;
+        margin-right: 164px;
+    }
+
+    .form-right{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .news-wrap{
+        flex-direction: column;
+    }
+
+    .sign-up-left h1{
+        font-size: 54px;
+    }
+
+    .sign-up-text{
+        width: 270px;
+        font-size: 15px;
+        margin-bottom: -35px;
+    }
+
+    .container-form{
+        font-size: 12px;
+    }
+
+    input[type = email]{
+        width: 260px;
+        height: 30px;
+    }
+
+    input[type = date]{
+        width: 99px;
+        height: 30px;
+        margin-right: 15px
+    }
+
+    .sign-up-left{
+        margin-left: 25px;
+    }
+
+    select{
+        width: 145px;
+        height: 35px;
+    }
+
+    body, html{
+        overflow-x: hidden;
+    }
+
+
+
+    .container-5{
+        margin-right: 85px;
+    }
+
+    .play-icon{
+        width: 270px;
+        height: 56px;
+    }
+    .play-now-main h1{
+        margin-bottom: 25px;
+    }
+
+    .play-now-wrapper{
+        height: 850px;
+    }
+
+    .container-6{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .nav-footer a{
+        font-size: 12px;
+    }
+
+    .nav-footer h1{
+        font-size: 25px;
+    }
+
+    .footer-wrapper{
+        flex-direction: column;
+        height: 545px;
+    }
+
+    .connect-with-us{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 25px;
+    }
+
+    .connect-with-us h1{
+        font-size: 25px;
+    }
+
+    .container-7{
+        display: block;
+        padding: 1px;
+        margin-bottom: 25px;
+    }
+}

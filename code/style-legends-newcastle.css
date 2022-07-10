@@ -1,0 +1,864 @@
+@font-face {
+    font-family: apex-legends;
+    src: url("../assets/ApexMk2-Regular.otf");
+}
+
+@font-face {
+    font-family: TT-Lakes;
+    src: url("../assets/TTLakes-Regular.ttf");
+}
+
+@font-face {
+    font-family: Duke-Fill;
+    src: url("../assets/Duke\ Fill.otf");
+}
+
+@font-face {
+    font-family: TT-Bold;
+    src: url("../assets/TTLakes-Bold.ttf");
+}
+
+@font-face {
+    font-family: TT-Med;
+    src: url("../assets/TT\ Lakes\ Medium\ DEMO.otf");
+}
+
+body {
+    margin: 0;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding: 0;
+    font-family: 'apex-legends', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: black;
+    align-items: center;
+    color: white;
+    display: flex;
+    position: fixed;
+    /* padding-right: 50px; */
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 5px;
+    background: none;
+    display: block;
+    float: right;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar ul li a {
+    padding-top: 20px;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #ddd;
+    letter-spacing: 0.15em;
+    transition: .3s ease;
+    background-color: transparent;
+}
+
+a {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+    color: white;
+    transition: .2s ease;
+    background-color: transparent;
+}
+
+a:hover {
+    transition: .2s ease;
+    transform: scale(1.1);
+    color: black;
+}
+
+.navbar ul li a:hover {
+    display: block;
+    color: red;
+    transition: .3s ease;
+    transform: scale(1.1);
+    box-shadow: inset 0px 0px 5px #000;
+}
+
+.navbar ul li .dropdown {
+    display: none;
+}
+
+.navbar ul li:hover .dropdown {
+    display: inline-block;
+    position: absolute;
+    background: black;
+    padding: 10px;
+    z-index: 5;
+}
+
+.navbar ul li:hover .dropdown-img {
+    transition: .2s ease;
+    transform: rotate(180deg);
+}
+
+.navbar ul li:hover .dropdown li {
+    display: block;
+}
+#toggle-nav {
+    display: none;
+    cursor: pointer;
+    flex-direction: row;
+}
+
+.burger-icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+.brand-logo {
+    margin-left: -35px;
+    margin-top: 5px;
+    height: 85px;
+    display: inline-block;
+}
+
+.logo {
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 55px;
+    width: 85px;
+    transition: .2s ease;
+}
+
+.logo:hover {
+    transition: .2s ease;
+    transform: scale(1.15);
+}
+
+.brand-logo a {
+    background-color: transparent;
+}
+
+.dropdown-img {
+    width: 20px;
+    height: 13px;
+    margin-left: 15px;
+    transition: .2s ease;
+}
+
+.main-wrapper {
+    margin-top: 89px;
+}
+
+.heroes-wrapper {
+    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    height: 780px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.heroes-pic {
+    display: flex;
+    height: 750px;
+    width: 410px;
+}
+
+
+.heroes-text {
+    padding-top: 50px;
+    width: 50%;
+    display: flex;
+    font-family: "TT-Lakes";
+    font-size: 24px;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+}
+
+#title {
+    font-family: "Duke-Fill";
+    font-size: 64px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.legends-motto {
+    font-family: "TT-Bold";
+    font-size: 30px;
+}
+
+.legends-desc {
+    margin-bottom: 50px;
+}
+
+.bold-intro {
+    font-family: "TT-Bold";
+    font-size: 25px;
+    padding-right: 50px;
+}
+
+.heroes-skills {
+    background: url("../assets/apex-screenshot-saviors-season-newcastle-1.jpg.adapt.1024w.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 65px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box-skills {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "TT-Lakes";
+    text-align: center;
+}
+
+.icon-skills {
+    width: 420px;
+    height: 250px;
+}
+
+.ability {
+    margin-top: 10px;
+    color: red;
+    font-size: 15px;
+}
+
+.name-skills {
+    font-family: "TT-Lakes";
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#video-legends{
+    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    align-items: center;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#video-legends h1{
+    font-size: 75px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.video {
+    width: 1080px;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+
+.heroes-sect{
+    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    height: 700px;
+}
+
+.heroes-sect h1{
+    font-family: "Duke-Fill";
+    font-size: 64px;
+}
+
+.heroes-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 25px;
+    flex-wrap: wrap;
+}
+
+.heroes-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "TT-Lakes";
+    font-size: 20px;
+}
+
+.heroes-box h1{
+    font-family: "TT-Bold";
+    font-size: 35px;
+}
+
+.heroes-icon{
+    width: 350px;
+    height: 400px;
+    transition: .2s ease;
+}
+
+.heroes-icon:hover{
+    transition: .2s ease;
+    transform: scale(1.19);
+}
+
+.icon-next{
+    margin-top: 20px;
+    width: 55px;
+    height: 55px;
+    transition: .2s ease;
+    transform: rotate(-90deg);
+}
+
+.heroes-box a{
+    padding: 0px;
+    transition: .2s ease;
+}
+
+.icon-next:hover, .heroes-box a:hover{
+    transform: scale(1.25);
+    transition: .2s ease;
+}
+
+
+.play-now-wrapper {
+    background: url("../assets/apex-section-bg-saviors-season-play-for-free-blue-texture-xl.jpg.adapt.1920w\(cut\).jpg");
+    height: 750px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.play-now-main {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "TT-Lakes";
+    color: white;
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.play-icon {
+    width: 600px;
+    height: 190px;
+    margin: auto;
+}
+
+.play-now-main h1 {
+    font-family: "Duke-Fill";
+    font-size: 64px;
+}
+
+.container-6 {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    margin: auto;
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    transition: .2s ease;
+}
+
+/* .container-6 a{
+    padding-left: 65px;
+    padding-right: 65px;
+} */
+
+.container-6:hover {
+    background-color: white;
+    transform: scale(1.1);
+    transition: .2s ease;
+    color: black;
+}
+
+.container-7 {
+    margin: auto;
+    margin-right: 100px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    transition: .2s ease;
+    font-family: "TT-Lakes";
+    font-size: 15px;
+}
+
+
+.container-7:hover {
+    background-color: white;
+    transform: scale(1.1);
+    transition: .2s ease;
+    color: black;
+}
+
+
+.footer-wrapper {
+    background-color: black;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-footer {
+    font-size: 18px;
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+.nav-footer h1 {
+    color: white;
+    font-size: 64px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 23px;
+}
+
+.nav-break {
+    align-items: left;
+    margin-left: 25px;
+    width: 250px;
+    height: 3px;
+    background-color: white;
+}
+
+.nav-footer ul {
+    margin: 0;
+    padding: 5px;
+    background: none;
+    display: block;
+    float: left;
+}
+
+.nav-footer ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-footer ul li a {
+    padding-top: 20px;
+    display: block;
+    text-decoration: none;
+    padding: 18px;
+    color: #ddd;
+    letter-spacing: 0.15em;
+    transition: .3s ease;
+    background-color: transparent;
+}
+
+.nav-footer ul li a:hover {
+    display: block;
+    color: red;
+    transition: .3s ease;
+    transform: scale(1.1);
+}
+
+.nav-footer ul li .dropdown {
+    display: none;
+}
+
+.nav-footer ul li:hover .dropdown {
+    display: inline-block;
+    position: absolute;
+    background: black;
+    padding: 2px;
+    z-index: 5;
+}
+
+.nav-footer ul li:hover .dropdown-img {
+    transition: .2s ease;
+    transform: rotate(180deg);
+}
+
+.nav-footer ul li:hover .dropdown li {
+    display: block;
+}
+
+.nav-footer-1 {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.nav-footer-1 ul {
+    margin: 0;
+    padding: 5px;
+    background: none;
+    display: block;
+    float: left;
+}
+
+.nav-footer-1 ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-footer-1 ul li a {
+    padding-top: 20px;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #ddd;
+    letter-spacing: 0.15em;
+    transition: .3s ease;
+    background-color: transparent;
+}
+
+.nav-footer-1 ul li a:hover {
+    display: block;
+    color: red;
+    transition: .3s ease;
+    transform: scale(1.1);
+}
+
+.connect-with-us {
+    padding-top: 70px;
+    color: white;
+    font-size: 20px;
+}
+
+.connect-with-us h1 {
+    margin-top: 0;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.connect-break {
+    width: 150px;
+    height: 3px;
+    background-color: white;
+    margin-left: 0px;
+}
+
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media a {
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-left: 0px;
+    transform: scale(1.2);
+}
+
+.icon-socmed {
+    width: 25px;
+    height: 25px;
+    transition: .2s ease;
+}
+
+.icon-yt {
+    width: 32px;
+    height: 23px;
+    transition: .2s ease;
+}
+
+.icon-fb {
+    width: 15px;
+    height: 23px;
+    transition: .2s ease;
+}
+
+.icon-socmed:hover,
+.social-media a:hover,
+.icon-yt:hover,
+.icon-fb:hover {
+    transition: .2s ease;
+    transform: scale(1.2);
+}
+
+.rating-box {
+    margin-top: 70px;
+    transition: .2s ease;
+}
+
+.rating-box:hover {
+    transform: scale(1.2);
+    transition: .2s ease;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    margin-top: -22px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .video{
+        width: 916px;
+        height: 494px;
+    }
+
+    #video-legends h1{
+        font-size: 65px;
+        margin-bottom: 65px;
+    }
+
+    .heroes-sect{
+        height: 1285px;
+    }
+
+    .connect-with-us{
+        margin-left: 45px;
+    }
+
+    .connect-with-us{
+        margin-left: 55px;
+    }
+
+    .rating{
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .rating a{
+        padding: 0;
+    }
+
+    .container-7{
+        margin-right: 69px;
+    }
+
+    .rating-box{
+        width: 210px;
+        height: 130px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    #navlist{
+        display: none;
+    }
+
+    .heroes-wrapper{
+        margin-top: 130px;
+    }
+
+    .main-wrapper{
+        margin-top: 140px;
+    }
+
+    .heroes-pic{
+        height: 655px;
+        width: 325px;
+        margin-top: 50px;
+    }
+
+    .heroes-text{
+        font-size: 18px;
+        margin-right: 15px;
+    }
+
+    .heroes-skills{
+        height: 925px;
+        background-position: 30% 50%;
+    }
+
+    .video{
+        height: 350px;
+        width: 720px;
+    }
+
+    .heroes-sect{
+        height: 1930px;
+    }
+
+    #toggle-nav{
+        display: block;
+        color: white;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .brand-logo{
+        margin-left: -11px;
+        margin-top: 0;
+    }
+
+    .footer-wrapper{
+        padding-left: 15px;
+    }
+
+    .nav-footer h1{
+        font-size: 42px;
+    }
+
+    .nav-footer{
+        margin-left: 3px;
+    }
+    .connect-with-us{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .rating-box{
+        display: none;
+    }
+
+    .rating{
+        display: flex;
+        margin: 15px;
+    }
+
+    .rating a{
+        padding: 0;
+    }
+
+    .container-7{
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 320px) { /* Mobile Size */
+
+    a {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 10px;
+    }
+
+    .heroes-wrapper{
+        flex-direction: column;
+    }
+
+    .main-wrapper{
+        margin-top: 150px;
+    }
+
+    .heroes-text{
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .heroes-pic{
+        height: 405px;
+        width: 225px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heroes-skills{
+        height: 1455px;
+    }
+
+    #video-legends h1{
+        font-size: 25px;
+    }
+
+    #video-legends{
+        justify-content: unset;
+        padding-top: 15px;
+        height: 365px;
+    }
+
+    .video{
+        height: 180px;
+        width: 300px;
+    }
+    .box-skills{
+        margin-bottom: 50px;
+    }
+
+    .heroes-wrapper{
+        height: 1110px;
+        padding-left: 10px;
+    }
+    .play-icon{
+        width: 270px;
+        height: 56px;
+    }
+    .play-now-main h1{
+        margin-bottom: 25px;
+    }
+
+    .play-now-wrapper{
+        height: 850px;
+    }
+
+    .container-6{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .nav-footer a{
+        font-size: 13px;
+    }
+
+    .nav-footer h1{
+        font-size: 25px;
+    }
+
+    .footer-wrapper{
+        flex-direction: column;
+        height: 545px;
+    }
+
+    .connect-with-us{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 25px;
+    }
+
+    .play-now-main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .connect-with-us h1{
+        font-size: 25px;
+    }
+
+    .container-7{
+        display: block;
+        padding: 1.2px;
+        margin-bottom: 25px;
+    }
+
+    .heroes-intro{
+        width: 75%;
+        font-size: 20px;
+    }
+}

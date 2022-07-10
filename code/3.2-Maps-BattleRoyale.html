@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles-battle-royale.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-logo">
+            <a href="1-Homepage-Main.html">
+                <img src="../assets/ADEX LEGENDS 1.png" class="logo">
+            </a>
+        </div>
+        <span id="toggle-nav" onclick="burgerMenu()"><img src="../assets/hamburger-icon.webp" class="burger-icon"></span>
+        <ul id = "navlist">
+            <li><a href="1-Homepage-Main.html">Home</a></li>
+            <li><a href="2.0-Legends.html">Legends</a></li>
+            <li><a href="3.0-Maps.html">Maps<img src="../assets/dropdown.png" class="dropdown-img"></a>
+                <ul class="dropdown">
+                    <li><a href="3.1-Maps-Arenas.html">Arenas</a></li>
+                    <li><a href="#battle-royale-intro">Battle Royale</a></li>
+                </ul>
+            </li>
+            <li><a href="4-About Us.html">About Us</a></li>
+            <li><a href="5-Register.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-wrapper">
+        <section id="battle-royale-intro">
+            <div class="battle-royale-intro-wrapper">
+                <div class="intro-1">
+                    <img src="../assets/battle-royale-section-logo-light.png" class="battle-royales-logo">
+                    <div class="intro-text">
+                        <h1>BATTLE ROYALE</h1>
+                        Massive maps. 60-player matches. An ever-shrinking Ring. Will your squad win it all?
+                    </div>
+                    <div class="battle-royale-section">
+                        <a href="#battle-royale-trailer">Battle Royales Trailer</a>
+                        <a href="#arenas-maps">Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="battle-royale-trailer">
+            <h1>FEEL THE BATTLE ROYALE ATMOSPHERE HERE !</h1>
+            <div class="trailer-video">
+                <iframe class = "video-battle-royale" src="https://www.youtube.com/embed/zsUd40fvFm8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="arenas-maps">
+            <div class="battle-royale-maps-wrapper">
+                <div class="maps-text">
+                    <h1>BATTLE ROYALE MAPS</h1>
+                    <p>
+                        Want to know more about the maps you'll be fighting on in the Apex Games? Get the inside scoop
+                        below.
+                        But, firstly you have to know the differences between Regular Arenas Maps and Battle Royale Maps
+                        before jump into this modes !
+                        <br>
+                        <br>
+                        Click on the maps name below to get more details !
+                    </p>
+                </div>
+                <div class="maps-container">
+                    <div class="maps-box"  onclick = "changeImg1()">
+                        <p>Kings Canyon</p>
+                    </div>
+                    <div class="maps-box"  onclick = "changeImg2()">
+                        <p>Olympus</p>
+                    </div>
+                    <div class="maps-box"  onclick = "changeImg3()">
+                        <p>World's Edge</p>
+                    </div>
+                    <div class="maps-box"  onclick = "changeImg4()">
+                        <p>Storm Point</p>
+                    </div>
+                </div>
+
+                <div class="maps-explanation">
+                    <img src="../assets/apex-media-maps-kings-canyon-xl-l-m.jpg.adapt.1920w(cut).jpg" id="img-change-1">
+                    <div class="explanation-text">
+                        <h1 id="title">KINGS CANYON</h1>
+                        <div id="explanation">
+                            <p>
+                                Once a simple settlement on the planet Solace, the island known as Kings Canyon didn't
+                                thrive until the IMC chose it as a hub for research and development. It housed an
+                                airbase, a
+                                water treatment plant, and a plethora of other facilities to support the IMC’s
+                                operations -
+                                like a highly classified project on the function of Phase tech, or a radical program to
+                                create a simulacra army powered by a single brain. But on the surface, Kings Canyon
+                                seemed
+                                like a simple IMC installation that, for all its faults, brought stability and jobs to
+                                Solace.
+                                <br>
+                                <br>
+                                To blow off steam, IMC soldiers stationed here would compete in gladiator-esque combat
+                                in an
+                                area they nicknamed 'Thunderdome'. Years later, when the Syndicate chose Kings Canyon as
+                                the
+                                site of their newest bloodsport, Thunderdome remained untouched - a tribute to the
+                                earliest
+                                known predecessor of the Apex Games. The island has undergone many changes since then -
+                                the
+                                Repulsor Tower was brought down by an unknown assailant, an underground explosion caused
+                                Thunderdome and Skulltown to collapse, and a ship crash obliterated the cliffs on the
+                                area’s
+                                northern edge. But no matter how it changes, it will always be the first home of the
+                                Apex
+                                Games.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="play-now">
+            <div class="play-now-wrapper">
+                <div class="play-now-main">
+                    <img src="../assets/apex-platform-logos.svg" class="play-icon">
+                    <h1>PLAY FOR FREE*</h1>
+                    On PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, and PC via Origin and
+                    Steam.
+                    <br>
+                    <br>
+                    <div class="container-6">
+                        <a href="6-Play-Now.html">
+                            <h2>PLAY NOW !</h2>
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+                    *Applicable platform account and platform subscription (sold separately) may be required. Persistent
+                    internet connection and EA account required. Age restrictions apply. Includes in-game purchases.
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="footer-wrapper">
+                <div class="nav-footer">
+                    <h1>NAVIGATION</h1>
+                    <hr class="nav-break">
+                    <ul>
+                        <li><a href="1-Homepage-Main.html">Home</a></li>
+                        <li><a href="2.0-Legends.html">Legends</a></li>
+                        <li><a href="3.0-Maps.html">Maps<img src="../assets/dropdown.png" class="dropdown-img"></a>
+                            <ul class="dropdown">
+                                <li><a href="3.1-Maps-Arenas.html">Arenas</a></li>
+                                <li><a href="#battle-royale-intro">Battle Royale</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav-footer-1">
+                        <ul>
+                            <li><a href="4-About Us.html">About Us</a></li>
+                            <li><a href="5-Register.html">Registration</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="connect-with-us">
+                    <h1>CONNECT WITH US !</h1>
+                    <hr class="connect-break">
+                    <div class="social-media">
+                        <a href="https://twitter.com/PlayApex?s=20&t=KZ94Ji7k0e99Cp58x8vqVg" target="_blank"><img src="../assets/icon-twitter.png" class="icon-socmed"></a>
+                        <a href="https://www.instagram.com/playapex/" target="_blank"><img src="../assets/logo-ig.jpg" class="icon-socmed"></a>
+                        <a href="https://www.twitch.tv/directory/game/Apex%20Legends" target="_blank"><img src="../assets/twitch.png" class="icon-socmed"></a>
+                        <a href="https://www.youtube.com/c/playapex" target="_blank"><img src="../assets/logo-yt.png" class="icon-yt"></a>
+                        <a href="https://www.facebook.com/playapex/" target="_blank"><img src="../assets/facebook.png" class="icon-fb"></a>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="container-7">
+                        <a href="6-Play-Now.html">
+                            <h2>PLAY NOW !</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="rating">
+                    <a href="https://www.esrb.org/ratings/38326/Apex+Legends/" target="_blank"><img src="../assets/apex-esrb-rating-t-interactive-june-2021.svg"
+                            class="rating-box"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                ©2022 BINUS Arts Inc.
+            </div>
+        </section>
+    </div>
+    <script src="script-battle-royale.js"></script>
+    <script src="script-burger-bar.js"></script>
+</body>
+
+</html>

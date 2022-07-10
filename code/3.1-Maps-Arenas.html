@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-arenas.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-logo">
+            <a href="1-Homepage-Main.html">
+                <img src="../assets/ADEX LEGENDS 1.png" class="logo">
+            </a>
+        </div>
+        <span id="toggle-nav" onclick="burgerMenu()"><img src="../assets/hamburger-icon.webp" class="burger-icon"></span>
+        <ul id = "navlist">
+            <li><a href="1-Homepage-Main.html">Home</a></li>
+            <li><a href="2.0-Legends.html">Legends</a></li>
+            <li><a href="3.0-Maps.html">Maps<img src="../assets/dropdown.png" class="dropdown-img"></a>
+                <ul class="dropdown">
+                    <li><a href="#arena-intro">Arenas</a></li>
+                    <li><a href="3.2-Maps-BattleRoyale.html">Battle Royale</a></li>
+                </ul>
+            </li>
+            <li><a href="4-About Us.html">About Us</a></li>
+            <li><a href="5-Register.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-wrapper">
+        <section id="arena-intro">
+            <div class="arena-intro-wrapper">
+                <div class="intro-1">
+                    <img src="../assets/arenas-section-logo-light (1).png" class="arenas-logo">
+                    <div class="intro-text">
+                        <h1>ARENAS</h1>
+                        Arenas are the underground, unsanctioned fight clubs on the Arenas. Fight to the finish in this
+                        action-packed 3v3 round-based game mode. Pick your loadout, and sharpen your skills on bespoke
+                        maps where there’s no room for luck.
+                    </div>
+                    <div class="arenas-section">
+                        <a href="#arenas-trailer">Arenas Trailer</a>
+                        <a href="#arenas-maps">Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="arenas-trailer">
+            <h1>FEEL THE ARENAS ATMOSPHERE HERE !</h1>
+            <div class="trailer-video">
+                <iframe class = "video-arena" src="https://www.youtube.com/embed/ChZaqqoNg-0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="arenas-maps">
+            <div class="arenas-maps-wrapper">
+                <div class="maps-text">
+                    <h1>ARENAS MAPS</h1>
+                    <p>
+                        Arenas features permanent bespoke maps like Party Crasher and Phase Runner, as well as weekly
+                        rotating maps. While each varies in size, they're designed to encourage frequent firefights and
+                        constant action. No hiding and hoping someone else will do your dirty work!
+                    </p>
+                    <br>
+                    Click on the maps name below to get more details !
+                </div>
+                <div class="maps-container">
+                    <div class="maps-box" onclick="changeImg1()">
+                        <p>Drop Off</p>
+                    </div>
+                    <div class="maps-box" onclick="changeImg2()">
+                        <p>Habitat 4</p>
+                    </div>
+                    <div class="maps-box" onclick="changeImg3()">
+                        <p>Encore</p>
+                    </div>
+                    <div class="maps-box" onclick="changeImg4()">
+                        <p>Overflow</p>
+                    </div>
+                    <div class="maps-box"  onclick="changeImg5()">
+                        <p>Party Crasher</p>
+                    </div>
+                    <div class="maps-box"  onclick="changeImg6()">
+                        <p>Phase Runner</p>
+                    </div>
+                    <div class="maps-box"  onclick="changeImg7()">
+                        <p>Rotating Map</p>
+                    </div>
+                </div>
+
+                <div class="maps-explanation">
+                    <img src="../assets/apex-media-maps-drop-off-xl-l-m.jpg.adapt.1920w(cut).jpg" id="img-change-1">
+                    <div class="explanation-text">
+                        <h1 id="title">DROP OFF</h1>
+                        <div id="explanation">
+                            <p>
+                                One of the tallest buildings in Malta is the fully automated Hammond Manufacturing
+                                Tower, but its rooftop is left exposed due to its height and lack of human presence.
+                                Brought together by a mutual hatred for big Outland corporations, Arenas fighters
+                                covertly commandeer the place at night for fierce Arena matches under the smoggy skies.
+                                It’s a win-win for all groups involved, with an added element of danger for the
+                                participants and profits made on Hammond’s property right under their nose.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="play-now">
+            <div class="play-now-wrapper">
+                <div class="play-now-main">
+                    <img src="../assets/apex-platform-logos.svg" class="play-icon">
+                    <h1>PLAY FOR FREE*</h1>
+                    On PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, and PC via Origin and
+                    Steam.
+                    <br>
+                    <br>
+                    <div class="container-6">
+                        <a href="6-Play-Now.html">
+                            <h2>PLAY NOW !</h2>
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+                    *Applicable platform account and platform subscription (sold separately) may be required. Persistent
+                    internet connection and EA account required. Age restrictions apply. Includes in-game purchases.
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="footer-wrapper">
+                <div class="nav-footer">
+                    <h1>NAVIGATION</h1>
+                    <hr class="nav-break">
+                    <ul>
+                        <li><a href="1-Homepage-Main.html">Home</a></li>
+                        <li><a href="2.0-Legends.html">Legends</a></li>
+                        <li><a href="3.0-Maps.html">Maps<img src="../assets/dropdown.png" class="dropdown-img"></a>
+                            <ul class="dropdown">
+                                <li><a href="#arena-intro">Arenas</a></li>
+                                <li><a href="3.2-Maps-BattleRoyale.html">Battle Royale</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav-footer-1">
+                        <ul>
+                            <li><a href="4-About Us.html">About Us</a></li>
+                            <li><a href="5-Register.html">Registration</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="connect-with-us">
+                    <h1>CONNECT WITH US !</h1>
+                    <hr class="connect-break">
+                    <div class="social-media">
+                        <a href="https://twitter.com/PlayApex?s=20&t=KZ94Ji7k0e99Cp58x8vqVg" target="_blank"><img src="../assets/icon-twitter.png" class="icon-socmed"></a>
+                        <a href="https://www.instagram.com/playapex/" target="_blank"><img src="../assets/logo-ig.jpg" class="icon-socmed"></a>
+                        <a href="https://www.twitch.tv/directory/game/Apex%20Legends" target="_blank"><img src="../assets/twitch.png" class="icon-socmed"></a>
+                        <a href="https://www.youtube.com/c/playapex" target="_blank"><img src="../assets/logo-yt.png" class="icon-yt"></a>
+                        <a href="https://www.facebook.com/playapex/" target="_blank"><img src="../assets/facebook.png" class="icon-fb"></a>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="container-7">
+                        <a href="6-Play-Now.html">
+                            <h2>PLAY NOW !</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="rating">
+                    <a href="https://www.esrb.org/ratings/38326/Apex+Legends/" target="_blank"><img src="../assets/apex-esrb-rating-t-interactive-june-2021.svg"
+                            class="rating-box"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                ©2022 BINUS Arts Inc.
+            </div>
+        </section>
+        <script src="script-arenas.js"></script>
+        <script src="script-burger-bar.js"></script>
+    </div>
+</body>
+
+</html>

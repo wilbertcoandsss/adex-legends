@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-register.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand-logo">
+            <a href="1-Homepage-Main.html">
+                <img src="../assets/ADEX LEGENDS 1.png" class="logo">
+            </a>
+        </div>
+        <span id="toggle-nav" onclick="burgerMenu()"><img src="../assets/hamburger-icon.webp" class="burger-icon"></span>
+        <ul id = "navlist">
+            <li><a href="1-Homepage-Main.html">Home</a></li>
+            <li><a href="2.0-Legends.html">Legends</a></li>
+            <li><a href="3.0-Maps.html">Maps<img src="../assets/dropdown.png" class="dropdown-img"></a>
+                <ul class="dropdown">
+                    <li><a href="3.1-Maps-Arenas.html">Arenas</a></li>
+                    <li><a href="3.2-Maps-BattleRoyale.html">Battle Royale</a></li>
+                </ul>
+            </li>
+            <li><a href="4-About Us.html">About Us</a></li>
+            <li><a href="5-Register.html">Registration</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-wrapper">
+
+        <section id="intro-regist">
+            <div class="intro-wrapper">
+                <div class="intro-text">
+                    <h1>REGISTRATION</h1>
+                    <img src="../assets/Legends.png" class="pic-intro">
+                    Register now and join the great adex legends community !
+                </div>
+            </div>
+        </section>
+
+        <section id="form-regist">
+            <form id="form-registration" onsubmit="validateForm(); return false" method="get">
+                <h1>REGISTRATION FORM</h1>
+                <div class="form-container">
+                    <div class="form-box" onkeyup="firstNameValidation()">
+                        <label for="first-name">
+                            Full Name<br>
+                            <input type="text" id="first-name">
+                            <br>
+                            <span id="first-name-validation"></span>
+                        </label>
+                    </div>
+                    <div class="form-box" onchange = "dateValidation()">
+                        <label for="first-name">
+                            Birthdate<br>
+                            <input type="date" id="date">
+                            <br>
+                            <span id = "date-error"></span>
+                        </label>
+                    </div>
+                    <div class="form-box" onkeyup = "emailValidation()">
+                        <label for="first-name">
+                            Email<br>
+                            <input type="text" id="email">
+                            <br>
+                            <span id = "email-error"></span>
+                        </label>
+                    </div>
+                    <div class="form-box" onkeyup="phoneValidation()">
+                        <label for="first-name">
+                            Phone<br>
+                            <input type="number" id="phone">
+                            <br>
+                            <span id = "phone-error"></span>
+                        </label>
+                    </div>
+
+                    <div class="form-box" oninput = "countryValidation()">
+                        <label for ="country">
+                            Country<br>
+                            <select id="country">
+                                <option value = "">Select</option>
+                                <option>Russia</option>
+                                <option>Japan</option>
+                                <option>Indonesia</option>
+                                <option>Canada</option>
+                                <option>UAE</option>
+                            </select>
+                            <span id = "country-error"></span>
+                        </label>
+                    </div>
+
+                    <div class="form-box" onkeyup="addressValidation()">
+                        <label for="address">
+                            Address<br>
+                            <textarea id = "address"></textarea>
+                            <br>
+                            <span id = "add-error"></span>
+                        </label>
+                    </div>
+                    <div class="form-box-1" onkeyup = "passwordValidation()">
+                        <label for="password">
+                            Password<br>
+                            <input type="password" id="password">
+                            <br>
+                            <span id = "password-error"></span>
+                        </label>
+                        <div class="vis-pw">
+                            <input type="checkbox" onclick="visiblePw()">Show Password
+                        </div>
+                    </div>
+                    <div class="form-box" onkeyup="passwordConfirmValidation()">
+                        <label for="first-name">
+                            Confirm Password<br>
+                            <input type="password" id="password-confirm">
+                            <br>
+                            <span id = "password-confirmation-error"></span>
+                        </label>
+                    </div>
+                    <div class="form-box" onclick="genderValidation()">
+                        <label for="form-box">
+                            Gender<br>
+                            <input type="radio" id="male" name="gender">Male
+                            <input type="radio" id="female" name="gender">Female
+                            <input type="radio" id="others" name="gender">Prefer Not To Say
+                            <br>
+                            <span id = "gender-error"></span>
+                            <span id = "gender"></span>
+                        </label>
+                    </div>
+                    <div class="form-box" onclick = "termsValidation()">
+                        <label for="form-box">
+                            <input type="checkbox" id="terms">By Creating an Account, you are agree to our Terms &
+                            Policy.
+                            <br>
+                            <span id = "terms-error"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-submit">
+                    <input type="submit" id="btn">
+                </div>
+            </form>
+        </section>
+
+        <section id="footer">
+            <div class="footer-wrapper">
+                <div class="nav-footer">
+                    <h1>NAVIGATION</h1>
+                    <hr class="nav-break">
+                    <ul>
+                        <li><a href="1-Homepage-Main.html">Home</a></li>
+                        <li><a href="2.0-Legends.html">Legends</a></li>
+                        <li><a href="#modes">Maps<img src="../assets/dropdown.png" class="dropdown-img"></a>
+                            <ul class="dropdown">
+                                <li><a href="3.1-Maps-Arenas.html">Arenas</a></li>
+                                <li><a href="3.2-Maps-BattleRoyale.html">Battle Royale</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav-footer-1">
+                        <ul>
+                            <li><a href="4-About Us.html">About Us</a></li>
+                            <li><a href="#form-regist">Registration</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="connect-with-us">
+                    <h1>CONNECT WITH US !</h1>
+                    <hr class="connect-break">
+                    <div class="social-media">
+                        <a href="https://twitter.com/PlayApex?s=20&t=KZ94Ji7k0e99Cp58x8vqVg" target="_blank"><img src="../assets/icon-twitter.png" class="icon-socmed"></a>
+                        <a href="https://www.instagram.com/playapex/" target="_blank"><img src="../assets/logo-ig.jpg" class="icon-socmed"></a>
+                        <a href="https://www.twitch.tv/directory/game/Apex%20Legends" target="_blank"><img src="../assets/twitch.png" class="icon-socmed"></a>
+                        <a href="https://www.youtube.com/c/playapex" target="_blank"><img src="../assets/logo-yt.png" class="icon-yt"></a>
+                        <a href="https://www.facebook.com/playapex/" target="_blank"><img src="../assets/facebook.png" class="icon-fb"></a>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="container-7">
+                        <a href="6-Play-Now.html">
+                            <h2>PLAY NOW !</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="rating">
+                    <a href="https://www.esrb.org/ratings/38326/Apex+Legends/" target="_blank"><img src="../assets/apex-esrb-rating-t-interactive-june-2021.svg"
+                            class="rating-box"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                ©2022 BINUS Arts Inc.
+            </div>
+        </section>
+    </div>
+    <script src= "script-register.js"></script>
+    <script src ="script-burger-bar.js"></script>
+</body>
+
+</html>
