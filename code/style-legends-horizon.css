@@ -1,26 +1,26 @@
 @font-face {
     font-family: apex-legends;
-    src: url("../assets/ApexMk2-Regular.otf");
+    src: url("/assets/ApexMk2-Regular.otf");
 }
 
 @font-face {
     font-family: TT-Lakes;
-    src: url("../assets/TTLakes-Regular.ttf");
+    src: url("/assets/TTLakes-Regular.ttf");
 }
 
 @font-face {
     font-family: Duke-Fill;
-    src: url("../assets/Duke\ Fill.otf");
+    src: url("/assets/Duke\ Fill.otf");
 }
 
 @font-face {
     font-family: TT-Bold;
-    src: url("../assets/TTLakes-Bold.ttf");
+    src: url("/assets/TTLakes-Bold.ttf");
 }
 
 @font-face {
     font-family: TT-Med;
-    src: url("../assets/TT\ Lakes\ Medium\ DEMO.otf");
+    src: url("/assets/TT\ Lakes\ Medium\ DEMO.otf");
 }
 
 body {
@@ -169,7 +169,7 @@ a:hover {
 }
 
 .heroes-wrapper {
-    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
     height: 780px;
     display: flex;
     flex-direction: row;
@@ -217,7 +217,7 @@ a:hover {
 }
 
 .heroes-skills {
-    background: url("../assets/apex-screenshot-season-7-horizon-black-hole.jpg.adapt.crop16x9.1455w.jpg");
+    background: url("/assets/apex-screenshot-season-7-horizon-black-hole.jpg.adapt.crop16x9.1455w.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -263,7 +263,7 @@ a:hover {
 }
 
 #video-legends{
-    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
     align-items: center;
     height: 800px;
     display: flex;
@@ -288,7 +288,7 @@ a:hover {
 
 
 .heroes-sect{
-    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
     height: 700px;
 }
 
@@ -351,7 +351,7 @@ a:hover {
 
 
 .play-now-wrapper {
-    background: url("../assets/apex-section-bg-saviors-season-play-for-free-blue-texture-xl.jpg.adapt.1920w\(cut\).jpg");
+    background: url("/assets/apex-section-bg-saviors-season-play-for-free-blue-texture-xl.jpg.adapt.1920w\(cut\).jpg");
     height: 750px;
     display: flex;
     background-size: cover;

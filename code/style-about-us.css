@@ -1,26 +1,26 @@
 @font-face {
     font-family: apex-legends;
-    src: url("../assets/ApexMk2-Regular.otf");
+    src: url("/assets/ApexMk2-Regular.otf");
 }
 
 @font-face {
     font-family: TT-Lakes;
-    src: url("../assets/TTLakes-Regular.ttf");
+    src: url("/assets/TTLakes-Regular.ttf");
 }
 
 @font-face {
     font-family: Duke-Fill;
-    src: url("../assets/Duke\ Fill.otf");
+    src: url("/assets/Duke\ Fill.otf");
 }
 
 @font-face {
     font-family: TT-Bold;
-    src: url("../assets/TTLakes-Bold.ttf");
+    src: url("/assets/TTLakes-Bold.ttf");
 }
 
 @font-face {
     font-family: TT-Med;
-    src: url("../assets/TT\ Lakes\ Medium\ DEMO.otf");
+    src: url("/assets/TT\ Lakes\ Medium\ DEMO.otf");
 }
 
 body {
@@ -167,7 +167,7 @@ a:hover {
 }
 
 .intro-wrapper{
-    background: url("../assets/apex-section-bg-about-scenery-beige-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-about-scenery-beige-xl.jpg.adapt.1920w.jpg");
     height: 900px;
 }
 
@@ -223,13 +223,13 @@ a:hover {
 }
 
 .content-wrapper{
-    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
     height: 700px;
     padding-top: 30px;
 }
 
 .content-wrapper-1{
-    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
     height: 900px;
     padding-top: 30px;
 }
@@ -270,7 +270,7 @@ a:hover {
 
 .squad-legends{
     display: flex;
-    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
     height: 1200px;
 }
 
@@ -313,7 +313,7 @@ a:hover {
 
 .wrap-container{
     display: flex;
-    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
     justify-content: center;
     background-size: cover;
 }
@@ -345,7 +345,7 @@ a:hover {
 }
 
 .explore-more{
-    background: url("../assets/apex-section-bg-about-scenery-beige-xl.jpg.adapt.1024w.jpg");
+    background: url("/assets/apex-section-bg-about-scenery-beige-xl.jpg.adapt.1024w.jpg");
     height: 1150px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -416,7 +416,7 @@ a:hover {
 
 
 .play-now-wrapper {
-    background: url("../assets/apex-section-bg-saviors-season-play-for-free-blue-texture-xl.jpg.adapt.1920w\(cut\).jpg");
+    background: url("/assets/apex-section-bg-saviors-season-play-for-free-blue-texture-xl.jpg.adapt.1920w\(cut\).jpg");
     background-size: cover;
     height: 750px;
     display: flex;

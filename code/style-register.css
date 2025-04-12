@@ -1,26 +1,26 @@
 @font-face {
     font-family: apex-legends;
-    src: url("../assets/ApexMk2-Regular.otf");
+    src: url("/assets/ApexMk2-Regular.otf");
 }
 
 @font-face {
     font-family: TT-Lakes;
-    src: url("../assets/TTLakes-Regular.ttf");
+    src: url("/assets/TTLakes-Regular.ttf");
 }
 
 @font-face {
     font-family: Duke-Fill;
-    src: url("../assets/Duke\ Fill.otf");
+    src: url("/assets/Duke\ Fill.otf");
 }
 
 @font-face {
     font-family: TT-Bold;
-    src: url("../assets/TTLakes-Bold.ttf");
+    src: url("/assets/TTLakes-Bold.ttf");
 }
 
 @font-face {
     font-family: TT-Med;
-    src: url("../assets/TT\ Lakes\ Medium\ DEMO.otf");
+    src: url("/assets/TT\ Lakes\ Medium\ DEMO.otf");
 }
 
 body {
@@ -169,7 +169,7 @@ a:hover {
 }
 
 .intro-wrapper {
-    background: url("../assets/apex-section-bg-about-scenery-beige-xl.jpg.adapt.1024w.jpg");
+    background: url("/assets/apex-section-bg-about-scenery-beige-xl.jpg.adapt.1024w.jpg");
     height: 870px;
 }
 
@@ -199,7 +199,7 @@ a:hover {
 }
 
 #form-regist {
-    background: url("../assets/apex-section-bg-legends-abilities-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-legends-abilities-xl.jpg.adapt.1920w.jpg");
     height: 1380px;
     background-size: cover;
 }

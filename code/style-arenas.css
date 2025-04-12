@@ -1,26 +1,26 @@
 @font-face {
     font-family: apex-legends;
-    src: url("../assets/ApexMk2-Regular.otf");
+    src: url("/assets/ApexMk2-Regular.otf");
 }
 
 @font-face {
     font-family: TT-Lakes;
-    src: url("../assets/TTLakes-Regular.ttf");
+    src: url("/assets/TTLakes-Regular.ttf");
 }
 
 @font-face {
     font-family: Duke-Fill;
-    src: url("../assets/Duke\ Fill.otf");
+    src: url("/assets/Duke\ Fill.otf");
 }
 
 @font-face {
     font-family: TT-Bold;
-    src: url("../assets/TTLakes-Bold.ttf");
+    src: url("/assets/TTLakes-Bold.ttf");
 }
 
 @font-face {
     font-family: TT-Med;
-    src: url("../assets/TT\ Lakes\ Medium\ DEMO.otf");
+    src: url("/assets/TT\ Lakes\ Medium\ DEMO.otf");
 }
 
 body {
@@ -168,7 +168,7 @@ a:hover {
 }
 
 .arena-intro-wrapper {
-    background: url("../assets/apex-section-bg-arenas-top-xl.jpg.adapt.1920w\(cut\).jpg");
+    background: url("/assets/apex-section-bg-arenas-top-xl.jpg.adapt.1920w\(cut\).jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     height: 850px;
@@ -221,7 +221,7 @@ a:hover {
 }
 
 #arenas-trailer {
-    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
 }
 
 #arenas-trailer h1 {
@@ -243,7 +243,7 @@ a:hover {
 }
 
 .arenas-maps-wrapper {
-    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
     height: 1380px;
     background-size: cover;
 }
@@ -374,7 +374,7 @@ a:hover {
 
 
 .play-now-wrapper {
-    background: url("../assets/apex-section-bg-saviors-season-play-for-free-blue-texture-xl.jpg.adapt.1920w\(cut\).jpg");
+    background: url("/assets/apex-section-bg-saviors-season-play-for-free-blue-texture-xl.jpg.adapt.1920w\(cut\).jpg");
     background-size: cover;
     height: 750px;
     display: flex;

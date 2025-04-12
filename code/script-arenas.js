@@ -1,7 +1,7 @@
 function changeImg1() {
     let goal = document.getElementById("img-change-1");
 
-    goal.src = "../assets/apex-media-maps-drop-off-xl-l-m.jpg.adapt.1920w(cut).jpg";
+    goal.src = "/assets/apex-media-maps-drop-off-xl-l-m.jpg.adapt.1920w(cut).jpg";
 
     let goal1 = document.getElementById("title");
 
@@ -15,7 +15,7 @@ function changeImg1() {
 function changeImg2() {
     let goal = document.getElementById("img-change-1");
 
-    goal.src = "../assets/apex-media-maps-habitat-xl-l-m.jpg.adapt.1920w(cut).jpg";
+    goal.src = "/assets/apex-media-maps-habitat-xl-l-m.jpg.adapt.1920w(cut).jpg";
 
     let goal1 = document.getElementById("title");
 
@@ -29,7 +29,7 @@ function changeImg2() {
 function changeImg3() {
     let goal = document.getElementById("img-change-1");
 
-    goal.src = "../assets/apex-media-maps-encore-xl-l-m.jpg.adapt.1920w(cut).jpg";
+    goal.src = "/assets/apex-media-maps-encore-xl-l-m.jpg.adapt.1920w(cut).jpg";
 
     let goal1 = document.getElementById("title");
 
@@ -43,7 +43,7 @@ function changeImg3() {
 function changeImg4() {
     let goal = document.getElementById("img-change-1");
 
-    goal.src = "../assets/apex-media-maps-thrillseekers-xl-l-m.jpg.adapt.1920w(cut).jpg";
+    goal.src = "/assets/apex-media-maps-thrillseekers-xl-l-m.jpg.adapt.1920w(cut).jpg";
 
     let goal1 = document.getElementById("title");
 
@@ -58,7 +58,7 @@ function changeImg4() {
 function changeImg5() {
     let goal = document.getElementById("img-change-1");
 
-    goal.src = "../assets/apex-media-maps-party-crasher-xl-l-m.jpg.adapt.1920w(cut).jpg";
+    goal.src = "/assets/apex-media-maps-party-crasher-xl-l-m.jpg.adapt.1920w(cut).jpg";
 
     let goal1 = document.getElementById("title");
 
@@ -72,7 +72,7 @@ function changeImg5() {
 function changeImg6() {
     let goal = document.getElementById("img-change-1");
 
-    goal.src = "../assets/apex-media-maps-phase-runner-xl-l-m.jpg.adapt.1920w(cut).jpg";
+    goal.src = "/assets/apex-media-maps-phase-runner-xl-l-m.jpg.adapt.1920w(cut).jpg";
 
     let goal1 = document.getElementById("title");
 
@@ -86,7 +86,7 @@ function changeImg6() {
 function changeImg7() {
     let goal = document.getElementById("img-change-1");
 
-    goal.src = "../assets/apex-media-maps-rotating-map-xl-l-m.jpg.adapt.1920w(cut).jpg";
+    goal.src = "/assets/apex-media-maps-rotating-map-xl-l-m.jpg.adapt.1920w(cut).jpg";
 
     let goal1 = document.getElementById("title");
 

@@ -1,26 +1,26 @@
 @font-face {
     font-family: apex-legends;
-    src: url("../assets/ApexMk2-Regular.otf");
+    src: url("/assets/ApexMk2-Regular.otf");
 }
 
 @font-face {
     font-family: TT-Lakes;
-    src: url("../assets/TTLakes-Regular.ttf");
+    src: url("/assets/TTLakes-Regular.ttf");
 }
 
 @font-face {
     font-family: Duke-Fill;
-    src: url("../assets/Duke\ Fill.otf");
+    src: url("/assets/Duke\ Fill.otf");
 }
 
 @font-face {
     font-family: TT-Bold;
-    src: url("../assets/TTLakes-Bold.ttf");
+    src: url("/assets/TTLakes-Bold.ttf");
 }
 
 @font-face {
     font-family: TT-Med;
-    src: url("../assets/TT\ Lakes\ Medium\ DEMO.otf");
+    src: url("/assets/TT\ Lakes\ Medium\ DEMO.otf");
 }
 
 body {
@@ -167,7 +167,7 @@ a:hover {
 }
 
 .homepage-wrapper {
-    background: url("../assets/apex-section-bg-saviors-season-return-user-xl.jpg.adapt.1920w\(cut\).jpg");
+    background: url("/assets/apex-section-bg-saviors-season-return-user-xl.jpg.adapt.1920w\(cut\).jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 890px;
@@ -268,7 +268,7 @@ a:hover {
 }
 
 .home-intro-2 {
-    background: url("../assets/cut.jpg");
+    background: url("/assets/cut.jpg");
     border: 1px solid black;
     display: flex;
     height: 900px;
@@ -296,7 +296,7 @@ a:hover {
 }
 
 .home-intro-3 {
-    background: url("../assets/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-homepage-news-xl.jpg.adapt.1920w.jpg");
     height: 1150px;
     background-size: cover;
 }
@@ -378,7 +378,7 @@ a:hover {
 }
 
 .new-hero {
-    background: url("../assets/apex-hero-medium-saviors-homepage-season-7x2-xl.jpg.adapt.crop7x2.1920w\(cutt\).jpg");
+    background: url("/assets/apex-hero-medium-saviors-homepage-season-7x2-xl.jpg.adapt.crop7x2.1920w\(cutt\).jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -429,7 +429,7 @@ a:hover {
 }
 
 #battle-royale {
-    background: url("../assets/apex-section-bg-battle-royale-video-xl.jpg.adapt.1920w\(cutvers\).jpg");
+    background: url("/assets/apex-section-bg-battle-royale-video-xl.jpg.adapt.1920w\(cutvers\).jpg");
     background-size: cover;
     height: 1140px;
     background-position: 60% 40%;
@@ -504,7 +504,7 @@ a:hover {
 }
 
 .video-wrapper {
-    background: url("../assets/apex-section-bg-saviors-season-secondary-texture-xl.jpg.adapt.1920w9\(cut\).jpg");
+    background: url("/assets/apex-section-bg-saviors-season-secondary-texture-xl.jpg.adapt.1920w9\(cut\).jpg");
     height: 1080px;
     background-size: cover;
     display: flex;
@@ -525,7 +525,7 @@ a:hover {
 
 
 #legends {
-    background: url("../assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
+    background: url("/assets/apex-section-bg-beige-texture-xl.jpg.adapt.1920w.jpg");
     background-size: cover;
     height: 650px;
     display: flex;
@@ -667,7 +667,7 @@ a:hover {
 }
 
 .play-now-wrapper {
-    background: url("../assets/apex-section-bg-saviors-season-play-for-free-blue-texture-xl.jpg.adapt.1920w\(cut\).jpg");
+    background: url("/assets/apex-section-bg-saviors-season-play-for-free-blue-texture-xl.jpg.adapt.1920w\(cut\).jpg");
     height: 750px;
     background-size: cover;
     display: flex;
