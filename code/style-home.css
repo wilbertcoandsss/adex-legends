@@ -269,6 +269,8 @@ a:hover {
 
 .home-intro-2 {
     background: url("/assets/cut.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 1px solid black;
     display: flex;
     height: 900px;
