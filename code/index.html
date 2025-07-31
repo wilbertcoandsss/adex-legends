@@ -1,4 +1,250 @@
 <!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Adex Legends</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
+    <script src="script-lenis.js"></script>
+    <style>
+        /* Anda bisa menambahkan sedikit custom CSS di sini jika diperlukan */
+        /* Contoh: Menambahkan font custom jika tidak ada di Tailwind */
+        body {
+            background-color: #121212; /* Warna latar belakang dasar */
+            color: white;
+            font-family: sans-serif; /* Font default */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <nav class="bg-black/80 backdrop-blur-sm sticky top-0 z-50 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#homepage">
+                <img src="/assets/ADEX LEGENDS 1.png" class="h-10 md:h-12">
+            </a>
+
+            <div class="lg:hidden">
+                <button id="toggle-nav" onclick="burgerMenu()" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <ul id="navlist" class="hidden lg:flex lg:items-center lg:space-x-8 text-lg">
+                <li><a href="#homepage" class="hover:text-red-500 transition duration-300">Home</a></li>
+                <li><a href="2.0-Legends.html" class="hover:text-red-500 transition duration-300">Legends</a></li>
+                <li class="relative group">
+                    <a href="3.0-Maps.html" class="hover:text-red-500 transition duration-300 flex items-center">
+                        Maps <img src="/assets/dropdown.png" class="w-4 h-4 ml-1">
+                    </a>
+                    <ul class="absolute hidden group-hover:block bg-black/80 backdrop-blur-sm mt-2 py-2 rounded-lg w-48">
+                        <li><a href="3.1-Maps-Arenas.html" class="block px-4 py-2 hover:bg-red-500">Arenas</a></li>
+                        <li><a href="3.2-Maps-BattleRoyale.html" class="block px-4 py-2 hover:bg-red-500">Battle Royale</a></li>
+                    </ul>
+                </li>
+                <li><a href="4-About Us.html" class="hover:text-red-500 transition duration-300">About Us</a></li>
+                <li><a href="5-Register.html" class="bg-red-600 px-5 py-2 rounded-md hover:bg-red-700 transition duration-300">Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div id="mobile-menu" class="hidden lg:hidden bg-black/90 p-4">
+        <ul class="flex flex-col space-y-4 text-center">
+            <li><a href="#homepage" class="hover:text-red-500">Home</a></li>
+            <li><a href="2.0-Legends.html" class="hover:text-red-500">Legends</a></li>
+            <li><a href="3.1-Maps-Arenas.html" class="hover:text-red-500">Arenas Maps</a></li>
+            <li><a href="3.2-Maps-BattleRoyale.html" class="hover:text-red-500">Battle Royale Maps</a></li>
+            <li><a href="4-About Us.html" class="hover:text-red-500">About Us</a></li>
+            <li><a href="5-Register.html" class="bg-red-600 px-5 py-2 rounded-md hover:bg-red-700 transition duration-300 inline-block mt-4">Registration</a></li>
+        </ul>
+    </div>
+
+
+    <div class="main-wrapper">
+
+        <section id="homepage" class="h-screen bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('/assets/apex-section-bg-saviors-season-return-user-xl.jpg.adapt.1920w(cut).jpg');">
+            <div class="bg-black/50 p-8 rounded-lg">
+                <img src="/assets/ADEX LEGENDS 2.png" class="w-full max-w-md mx-auto">
+                <p class="mt-4 max-w-2xl mx-auto">For PlayStation® 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, and PC via Origin and Steam.</p>
+                <a href="4-About Us.html" class="mt-8 inline-block bg-red-600 text-white font-bold py-3 px-8 rounded-lg text-xl hover:bg-white hover:text-black transition duration-300">
+                    Learn More !
+                </a>
+            </div>
+        </section>
+
+        <section id="maps-intro" class="h-screen bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('/assets/news3(cut).png');">
+             <div class="bg-black/60 p-8 rounded-lg">
+                <p class="text-3xl md:text-5xl font-bold leading-tight">WILL YOU BE ABLE TO <br>CONTROL THE MADNESS ON THE <br><span class="text-red-500">ARENA ?</span></p>
+                <div class="mt-8 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center">
+                    <a href="3.1-Maps-Arenas.html" class="bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-black transition duration-300">
+                        Jump into Incredible Arena !
+                    </a>
+                    <a href="3.2-Maps-BattleRoyale.html" class="bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-black transition duration-300">
+                        Jump into Battle Royale !
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="latest-news" class="py-20 px-4">
+            <div class="container mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold text-center mb-12">LATEST NEWS</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 rounded-lg overflow-hidden group">
+                        <img src="/assets/nes1.jpg" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-400"><span class="font-bold text-red-500">APEX LEGENDS</span> - MAY 9, 2022</p>
+                            <h3 class="text-2xl font-bold mt-2">Saviour Patch Notes</h3>
+                            <p class="mt-4 text-gray-300">Leap into the line of fire with a new Legend, Newcastle, traverse a monstrous map update, and more!</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg overflow-hidden group">
+                        <img src="/assets/news2.jpg" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-400"><span class="font-bold text-red-500">APEX LEGENDS</span> - MAY 6, 2022</p>
+                            <h3 class="text-2xl font-bold mt-2">Apex Legends Ranked Reloaded</h3>
+                            <p class="mt-4 text-gray-300">Check out a full breakdown of the big updates coming to Ranked play with the launch of Saviors.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg overflow-hidden group">
+                        <img src="/assets/news3(cut).png" class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-400"><span class="font-bold text-red-500">APEX LEGENDS</span> - MAY 6, 2022</p>
+                            <h3 class="text-2xl font-bold mt-2">3rd Anniversary Community Features</h3>
+                            <p class="mt-4 text-gray-300">We're doing weekly spotlights on creators and community groups who have helped drive Apex Legends forward.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="new-hero" class="h-screen bg-cover bg-center flex items-end justify-center text-center p-8" style="background-image: url('/assets/newcastle-bg.jpg');">
+            <div class="bg-black/60 p-8 rounded-t-lg">
+                <h1 class="text-4xl md:text-6xl font-extrabold">NEWCASTLE - HEROIC DEFENDER</h1>
+                <p class="mt-4 max-w-3xl mx-auto text-lg">The Hero of Harris Valley, Newcastle will need to shield his squadmates and his secrets to survive the Apex Games.</p>
+                <a href="2.2-Legends-Newcastle.html" class="mt-8 inline-block bg-red-600 text-white font-bold py-3 px-8 rounded-lg text-xl hover:bg-white hover:text-black transition duration-300">
+                    MEET NEWCASTLE HERE !
+                </a>
+            </div>
+        </section>
+
+        <section id="battle-royale" class="py-20 px-4">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold">BEYOND BATTLE ROYALE</h1>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-300">Show 'em what you're made of in Apex Legends, a free-to-play hero shooter where contenders from across the Frontier team up to battle for glory, fame, and fortune.</p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <img src="/assets/apex-grid-tile-sci-fi-wild-west.png.adapt.crop16x9.652w.png" class="w-full rounded-lg">
+                        <h2 class="text-2xl font-bold mt-4">Legendary Characters</h2>
+                        <p class="mt-2 text-gray-300">Explore a growing roster of powerful Legends, each with their own unique personality, strengths, and abilities.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="/assets/apex-grid-tile-battle-royale.png.adapt.crop16x9.652w.png" class="w-full rounded-lg">
+                        <h2 class="text-2xl font-bold mt-4">The Ultimate Squad</h2>
+                        <p class="mt-2 text-gray-300">Choose your Legend, team up, and combine your unique skills to be the last squad standing.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="/assets/apex-grid-tile-lawless-world.png.adapt.crop16x9.652w.png" class="w-full rounded-lg">
+                        <h2 class="text-2xl font-bold mt-4">Strategic Combat</h2>
+                        <p class="mt-2 text-gray-300">Master an expanding assortment of powerful weapons, unique abilities, and game-changing equipment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro-video" class="py-20 px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-8">SEE OUR GAMEPLAY TRAILER BELOW !</h1>
+            <div class="aspect-w-16 aspect-h-9 max-w-4xl mx-auto">
+                <iframe class="w-full h-full rounded-lg shadow-2xl" src="https://www.youtube.com/embed/innmNewjkuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section id="legends" class="h-screen bg-cover bg-no-repeat bg-right-top flex items-center" style="background-image: url('/assets/Legends.png');">
+            <div class="container mx-auto px-8 text-left">
+                <div class="max-w-md bg-black/50 p-8 rounded-lg">
+                    <p class="text-2xl md:text-3xl">READY TO MEET THE</p>
+                    <span class="text-5xl md:text-7xl font-extrabold text-red-500">LEGENDS ?</span>
+                    <p class="mt-4 text-lg">Misfits, outcasts, drifters, and grifters – the Apex Games welcomes them all. See what each Legend can do for your squad.</p>
+                    <a href="2.0-Legends.html" class="mt-8 inline-block bg-red-600 text-white font-bold py-3 px-8 rounded-lg text-xl hover:bg-white hover:text-black transition duration-300">
+                        MEET THE LEGENDS !
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="play-now" class="h-screen bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('/assets/apex-section-bg-saviors-season-return-user-xl.jpg.adapt.1920w(cut).jpg');">
+            <div class="bg-black/60 p-8 md:p-12 rounded-lg">
+                <img src="/assets/apex-platform-logos.svg" class="h-12 mx-auto">
+                <h1 class="text-4xl md:text-6xl font-extrabold mt-6">PLAY FOR FREE*</h1>
+                <p class="mt-4 text-lg">On PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch, and PC via Origin and Steam.</p>
+                <a href="6-Play-Now.html" class="mt-8 inline-block bg-red-600 text-white font-bold py-4 px-10 rounded-lg text-2xl hover:bg-white hover:text-black transition duration-300">
+                    PLAY NOW !
+                </a>
+                <p class="mt-8 text-xs text-gray-400 max-w-2xl mx-auto">*Applicable platform account and platform subscription (sold separately) may be required. Persistent internet connection and EA account required. Age restrictions apply. Includes in-game purchases.</p>
+            </div>
+        </section>
+        
+        <footer id="footer" class="bg-black py-12 px-4">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h1 class="text-xl font-bold">NAVIGATION</h1>
+                    <hr class="my-4 border-gray-700">
+                    <ul class="space-y-2">
+                        <li><a href="#homepage" class="hover:text-red-500">Home</a></li>
+                        <li><a href="2.0-Legends.html" class="hover:text-red-500">Legends</a></li>
+                        <li><a href="3.0-Maps.html" class="hover:text-red-500">Maps</a></li>
+                        <li><a href="4-About Us.html" class="hover:text-red-500">About Us</a></li>
+                        <li><a href="5-Register.html" class="hover:text-red-500">Registration</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold">CONNECT WITH US !</h1>
+                    <hr class="my-4 border-gray-700">
+                    <div class="flex justify-center md:justify-start space-x-4 my-4">
+                        <a href="https://twitter.com/PlayApex?s=20&t=KZ94Ji7k0e99Cp58x8vqVg" target="_blank"><img src="/assets/icon-twitter.png" class="h-8 w-8 hover:opacity-75"></a>
+                        <a href="https://www.instagram.com/playapex/" target="_blank"><img src="/assets/logo-ig.jpg" class="h-8 w-8 hover:opacity-75"></a>
+                        <a href="https://www.twitch.tv/directory/game/Apex%20Legends" target="_blank"><img src="/assets/twitch.png" class="h-8 w-8 hover:opacity-75"></a>
+                        <a href="https://www.youtube.com/c/playapex" target="_blank"><img src="/assets/logo-yt.png" class="h-8 w-8 hover:opacity-75"></a>
+                        <a href="https://www.facebook.com/playapex/" target="_blank"><img src="/assets/facebook.png" class="h-8 w-8 hover:opacity-75"></a>
+                    </div>
+                    <a href="6-Play-Now.html" class="inline-block bg-red-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-white hover:text-black transition duration-300">
+                        PLAY NOW !
+                    </a>
+                </div>
+                <div class="flex justify-center md:justify-end items-start">
+                    <a href="https://www.esrb.org/ratings/38326/Apex+Legends/" target="_blank">
+                        <img src="/assets/apex-esrb-rating-t-interactive-june-2021.svg" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="text-center text-gray-500 mt-12 pt-8 border-t border-gray-800">
+                <p>©2022 BINUS Arts Inc.</p>
+                <p>©2540126645 - Wilbert Coandadiputra</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        function burgerMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- Before Responsive  -->
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -278,3 +524,4 @@
 </body>
 
 </html>
+ -->
